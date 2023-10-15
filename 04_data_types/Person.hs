@@ -1,7 +1,7 @@
 data Person = Person { firstName :: String, lastName :: String, age :: Int }
 
 abbrFirstName :: Person -> Person
-abbrFirstName p =
+abbrFirstName p
 	| length (firstName p) < 2 = p
 	| otherwise = p { firstName = take 1 (firstName p) ++ "." }
 
